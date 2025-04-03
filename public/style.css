@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #f0effd, #38adec, #2545d3, #0326c0, #10001e);
+    color: #fff;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Input y botón */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #60acef; /* Azul claro */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #fff;
+    outline: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Texto tenue */
+}
+
+input:focus {
+    border-color: #ec38bc; /* Rosa intenso al seleccionar */
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ec38bc, #a125d3);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(236, 56, 188, 0.6);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #a125d3, #ec38bc);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(236, 56, 188, 0.8);
+}
+
+/* Contenedor del clima */
+.pokemon-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta del clima */
+.card {
+    background: linear-gradient(180deg, #f58ef5 0%, #60acef 24%, #61e9b2 49%, #eee487 75%, #ec6262 100%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    display: none; /* Oculta la tarjeta hasta que haya datos */
+}
+
+/* Efecto hover en la tarjeta */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del clima */
+.card img {
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Nombre de la ciudad */
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Descripción y temperatura */
+.card p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+
+.card p strong {
+    font-weight: bold;
+}
+
+/* Diseño Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    input, button {
+        font-size: 0.9rem;
+    }
+    .card {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - Pantalla de Presentación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-container">
+        <h1>Consulta el Clima de Tu Ciudad</h1>
+        <p>¡Descubre el clima actual en cualquier parte del mundo!</p>
+        <button id="enter-button">Entrar</button>
+    </div>
+
+    <script>
+        document.getElementById("enter-button").addEventListener("click", () => {
+            window.location.href = "index.html";  // Redirige a la página principal
+        });
+    </script>
+</body>
+</html>

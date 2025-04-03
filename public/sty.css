@@ -1,0 +1,62 @@
+/* Estilos para la pantalla de presentación */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #38adec, #2545d3);
+    color: #fff;
+    text-align: center;
+}
+
+.intro-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.intro-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.intro-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #ec38bc, #a125d3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #a125d3, #ec38bc);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(236, 56, 188, 0.8);
+}
+
+/* Diseño Responsive */
+@media (max-width: 600px) {
+    .intro-container {
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
